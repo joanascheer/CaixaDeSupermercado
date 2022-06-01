@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp">
+
+        <ImageView
+            android:id="@+id/carrinhoDetalheCompra"
+            android:layout_width="@dimen/size_125dp"
+            android:layout_height="@dimen/size_125dp"
+            android:contentDescription="@string/carrinho_compras_image_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carrinho" />
+
+        <TextView
+            android:id="@+id/valorTotalText"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/black"
+            android:text="@string/exemplo_text"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/carrinhoDetalheCompra"/>
+
+        <Button
+            android:id="@+id/novaCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/valorTotalText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/margin_80dp"
+            android:text="@string/refazer_compra"
+            android:backgroundTint="@color/red"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

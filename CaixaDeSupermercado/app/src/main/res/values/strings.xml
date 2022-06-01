@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Caixa de Supermercado</string>
+    <string name="carrinho_compras_image_description">Imagem de um carrinho de compras vermelho.</string>
+    <string name="app_description">Esse aplicativo vai te ajudar a calcular o preço dos seus produtos! Para isso digite o nome do produto, a quantidade, valor e por fim clicque no botão de calcular para verificar o valor da sua compra!</string>
+    <string name="nome_produto">Nome do Produto</string>
+    <string name="quantidade_do_produto">Quantidade do produto</string>
+    <string name="valor_do_produto">Valor do produto</string>
+    <string name="calcular">calcular</string>
+    <string name="refazer_compra">refazer compra</string>
+    <string name="exemplo_text">Exemplo</string>
+</resources>

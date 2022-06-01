@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp">
+
+
+        <ImageView
+            android:id="@+id/carrinho"
+            android:layout_width="@dimen/size_125dp"
+            android:layout_height="@dimen/size_125dp"
+            android:contentDescription="@string/carrinho_compras_image_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carrinho" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_description"
+            android:textSize="@dimen/text_size_12sp"
+            android:textAlignment="textStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/carrinho"
+            android:layout_marginStart="@dimen/margin_140dp"
+            android:layout_marginTop="@dimen/margin_24dp" />
+        
+        <EditText
+            android:id="@+id/nomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nome_produto"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintTop_toBottomOf="@+id/carrinho"
+            android:layout_margin="@dimen/margin_16dp"
+            />
+
+        <EditText
+            android:id="@+id/quantidadeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/quantidade_do_produto"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintTop_toBottomOf="@+id/nomeProduto"
+            android:layout_margin="@dimen/margin_16dp"
+            />
+
+        <EditText
+            android:id="@+id/valorProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/valor_do_produto"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintTop_toBottomOf="@+id/quantidadeProduto"
+            android:layout_margin="@dimen/margin_16dp"
+            />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valorProduto"
+            android:layout_marginTop="@dimen/margin_320dp"
+            android:text="@string/calcular"
+            android:backgroundTint="@color/red"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
