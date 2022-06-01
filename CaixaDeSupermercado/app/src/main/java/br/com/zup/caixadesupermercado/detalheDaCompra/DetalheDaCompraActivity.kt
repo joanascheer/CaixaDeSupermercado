@@ -25,6 +25,9 @@ class DetalheDaCompraActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setTitle(R.string.titulo_detalhe_compra)
     }
 
     private fun recuperarExibirResultado() {
