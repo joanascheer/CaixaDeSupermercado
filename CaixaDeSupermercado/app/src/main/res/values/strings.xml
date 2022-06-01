@@ -8,4 +8,5 @@
     <string name="calcular">calcular</string>
     <string name="refazer_compra">refazer compra</string>
     <string name="exemplo_text">Exemplo</string>
+    <string name="titulo_detalhe_compra">Detalhe da Compra</string>
 </resources>
