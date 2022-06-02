@@ -56,4 +56,12 @@ class DetalheDaCompraActivity : AppCompatActivity() {
         binding.valorTotalText.text = "O VALOR TOTAL É DE R$${total.toString()}"
 
     }
+    
+        override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            this.finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
